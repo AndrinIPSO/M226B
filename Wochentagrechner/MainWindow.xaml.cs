@@ -25,15 +25,25 @@ namespace Wochentagrechner
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Ermitteln Wochentag und Audgabe
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            Wochentag WD = new Wochentag();
+
             try
             {
-
+                WD.j = Convert.ToInt32(tb_y.Text);
+                WD.m = Convert.ToInt32(tb_m.Text);
+                WD.t = Convert.ToInt32(tb_d.Text);
+                lb_result.Content = WD.GibWochentag();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show()
+                MessageBox.Show($"Error:{ex}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 throw;
             }
         }

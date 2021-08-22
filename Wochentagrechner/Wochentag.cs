@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Wochentagrechner
 {
+    /// <summary>
+    /// Wochentag
+    /// </summary>
     public class Wochentag
     {
         /// <summary>
@@ -61,7 +64,7 @@ namespace Wochentagrechner
         public string GibWochentag()
         {
             DateTime dt = new DateTime(j, m, t);
-            return dt.ToString();
+            return dt.ToString("dddd");
         }
 
 
