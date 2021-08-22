@@ -24,5 +24,18 @@ namespace Wochentagrechner
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show()
+                throw;
+            }
+        }
     }
 }
