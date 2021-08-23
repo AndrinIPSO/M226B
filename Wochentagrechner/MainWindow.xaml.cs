@@ -43,7 +43,7 @@ namespace Wochentagrechner
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error:{ex}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"Error: {ex}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 throw;
             }
         }
