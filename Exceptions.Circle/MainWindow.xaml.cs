@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CircleLibrary;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -14,7 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Exceptions.Circle
+namespace Exceptions.Circles
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -98,7 +99,8 @@ namespace Exceptions.Circle
 
         private void bt_samplecircle_Click(object sender, RoutedEventArgs e)
         {
-
+            Circle circle = new Circle(2,3,2);
+            MessageBox.Show($"Kreis wurde instanziiert: {circle.ToString()}","Congrats" );
         }
 
         private void cb_nocrash_Checked(object sender, RoutedEventArgs e)
@@ -111,23 +113,37 @@ namespace Exceptions.Circle
             if (cb_nocrash.IsChecked == true)
             {
                 bt_noex.IsEnabled = false;
-
             }
             else
             {
                 bt_noex.IsEnabled = true;
-
             }
         }
 
         private void bt_experiment_Click(object sender, RoutedEventArgs e)
         {
+
+
             StreamWriter sw = new StreamWriter(@"c:\Test.txt");
             sw.WriteLine(tb_input.Text);
             sw.Close();
             StreamReader strim = new StreamReader(@"c:\Test.txt");
             lb_result.Content = strim.ReadToEnd();
             strim.Close();
+        }
+
+        private void bt_find_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                File.Create($@"c:\easyaccess\{tb_input.Text}");
+                tb_input.Text = "";
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Fehler");
+            }
         }
     }
 }

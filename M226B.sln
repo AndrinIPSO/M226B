@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "B1", "B1", "{95376870-E605-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exeptions", "Exeptions\Exeptions.csproj", "{639EF83B-A667-4D27-9233-1D2BE8FDECA4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exceptions.Circle", "Exceptions.Circle\Exceptions.Circle.csproj", "{C2F13E64-69B9-4DE5-91F6-614DE0CAEC69}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exceptions.Circles", "Exceptions.Circle\Exceptions.Circles.csproj", "{C2F13E64-69B9-4DE5-91F6-614DE0CAEC69}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircleLibrary", "..\..\..\Documents\VS\M226A\M226A\CircleLibrary\CircleLibrary.csproj", "{E9A3EA6F-826E-46FD-AC31-26F02B1129F6}"
 EndProject

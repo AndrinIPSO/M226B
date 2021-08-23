@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{C2F13E64-69B9-4DE5-91F6-614DE0CAEC69}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Exceptions.Circle</RootNamespace>
-    <AssemblyName>Exceptions.Circle</AssemblyName>
+    <RootNamespace>Exceptions.Circles</RootNamespace>
+    <AssemblyName>Exceptions.Circles</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -93,6 +93,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\Documents\VS\M226A\M226A\CircleLibrary\CircleLibrary.csproj">
