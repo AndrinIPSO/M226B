@@ -33,7 +33,7 @@ namespace Wochentagrechner
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Wochentag WD = new Wochentag();
-
+            
             try
             {
                 WD.j = Convert.ToInt32(tb_y.Text);
@@ -43,9 +43,14 @@ namespace Wochentagrechner
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error: {ex}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                throw;
+                MessageBox.Show($"Fehler: {ex.Message}", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+            finally
+            {
+                lb_result.Content = "Fehler";
+                tb_d.Focus();
+            }
+            
         }
     }
 }
