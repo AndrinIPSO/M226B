@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace GeometrischeFiguren
 {
-    class Dreieck
+    public class Dreieck : GeomFigure
     {
+        public Dreieck(double[] s)
+            : base(s)
+        {
+
+        }
+
+        public double Umfang()
+        {
+            return Seiten[0] + Seiten[1] + Seiten[2];
+        }
     }
 }

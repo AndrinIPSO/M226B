@@ -21,9 +21,14 @@ namespace GeometrischeFiguren
             _Seiten = seiten;
         }
 
-        public string Information()
+        public string informationen()
         {
-            return "Ist eine Figur ";
+            string result = "Seitenlängen: ";
+            foreach (var d in Seiten)
+            {
+                result = result + " " + d;
+            }
+            return result;
         }
     }
 }
