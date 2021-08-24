@@ -21,7 +21,7 @@ namespace GeometrischeFiguren
             _Seiten = seiten;
         }
 
-        public string informationen()
+        public override string ToString()
         {
             string result = "Seitenlängen: ";
             foreach (var d in Seiten)
@@ -30,5 +30,6 @@ namespace GeometrischeFiguren
             }
             return result;
         }
+
     }
 }

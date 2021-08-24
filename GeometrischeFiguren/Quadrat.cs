@@ -18,5 +18,9 @@ namespace GeometrischeFiguren
         {
             return base.Multiplikation(base.Seiten[0], base.Seiten[0]);
         }
+        public override string ToString()
+        {
+            return "Quadrat-" + base.ToString();
+        }
     }
 }

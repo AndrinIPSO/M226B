@@ -18,5 +18,10 @@ namespace GeometrischeFiguren
         {
             return Seiten[0] + Seiten[1] + Seiten[2];
         }
+
+        public override string ToString()
+        {
+            return "Dreieck-" + base.ToString();
+        }
     }
 }

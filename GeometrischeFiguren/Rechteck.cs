@@ -23,5 +23,11 @@ namespace GeometrischeFiguren
         {
             return a * b;
         }
+
+        public override string ToString()
+        {
+            return "Rechteck-" + base.ToString();
+        }
+
     }
 }
