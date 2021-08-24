@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace GeometrischeFiguren
 {
-    public class GeomFigure
+    public class GeomFigure : IDraw
     {
+        public string Color { get; set; }
+
         protected double[] _Seiten;
 
         public double[] Seiten
@@ -15,6 +17,8 @@ namespace GeometrischeFiguren
             get { return _Seiten; }
             set { _Seiten = value; }
         }
+
+        
 
         public GeomFigure(double[] seiten)
         {
@@ -48,5 +52,9 @@ namespace GeometrischeFiguren
             return 0.0;
         }
 
+        public void Draw()
+        {
+            Console.WriteLine($"Draw in Farbe {Color}");
+        }
     }
 }

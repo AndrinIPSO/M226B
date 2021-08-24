@@ -26,6 +26,7 @@ namespace GeometrischeFiguren
                 Console.WriteLine(geomfigure.ToString());
                 Console.WriteLine("Umfang: " + geomfigure.Umfang());
                 Console.WriteLine($"Fläche: {geomfigure.Fläche()}");
+                geomfigure.Draw();
             }
 
             //Console.WriteLine($"Rechteckfläche={r.RechteckFläche()}");

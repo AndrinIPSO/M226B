@@ -3,28 +3,29 @@
   <Class Name="GeometrischeFiguren.Rechteck">
     <Position X="4.5" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAABAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AIABAAAAAAAAAAAEAAAEAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
       <FileName>Rechteck.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GeometrischeFiguren.Dreieck">
     <Position X="6.25" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
       <FileName>Dreieck.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GeometrischeFiguren.GeomFigure">
-    <Position X="5.25" Y="1" Width="1.5" />
+    <Position X="5.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAgAAAAABAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <HashCode>AIAAAAAAAAAAAgAEgAAAAAAAAAAAAAAAAAAAiAAAAAg=</HashCode>
       <FileName>GeomFigure.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="GeometrischeFiguren.Quadrat">
     <Position X="4.5" Y="5.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AIAAAAAAAAAAAAAEAAEAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
       <FileName>Quadrat.cs</FileName>
     </TypeIdentifier>
   </Class>
