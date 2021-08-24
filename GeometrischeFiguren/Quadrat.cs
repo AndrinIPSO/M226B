@@ -22,5 +22,15 @@ namespace GeometrischeFiguren
         {
             return "Quadrat-" + base.ToString();
         }
+
+        public override double Umfang()
+        {
+            return base.Umfang() * 2;
+        }
+
+        public override double Fläche()
+        {
+            return Seiten[0] * Seiten[0];
+        }
     }
 }

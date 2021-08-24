@@ -14,14 +14,16 @@ namespace GeometrischeFiguren
 
         }
 
-        public double Umfang()
-        {
-            return Seiten[0] + Seiten[1] + Seiten[2];
-        }
+
 
         public override string ToString()
         {
             return "Dreieck-" + base.ToString();
+        }
+
+        public override double Fläche()
+        {
+            return Seiten[0] * Seiten[0] / 2;
         }
     }
 }

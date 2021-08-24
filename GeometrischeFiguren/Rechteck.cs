@@ -28,6 +28,15 @@ namespace GeometrischeFiguren
         {
             return "Rechteck-" + base.ToString();
         }
+        public override double Umfang()
+        {
+            return base.Umfang() * 2;
+        }
+
+        public override double Fläche()
+        {
+            return Seiten[0] * Seiten[1];
+        }
 
     }
 }

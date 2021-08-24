@@ -43,5 +43,10 @@ namespace GeometrischeFiguren
             return tmp;
         }
 
+        public virtual double Fläche()
+        {
+            return 0.0;
+        }
+
     }
 }
