@@ -31,14 +31,16 @@ namespace GeometrischeFiguren
             return result;
         }
 
-        public string Umfang()
+        public virtual double Umfang()
         {
+
+            // Seiten.sum()
             double tmp = 0;
             foreach (double seite in Seiten)
             {
                 tmp += seite;
             }
-            return $"Umfang: {tmp}";
+            return tmp;
         }
 
     }
