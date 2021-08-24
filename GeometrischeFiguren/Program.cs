@@ -11,19 +11,31 @@ namespace GeometrischeFiguren
         static void Main(string[] args)
         {
 
-
+            List<GeomFigure> Figuren = new List<GeomFigure>();
 
             Rechteck r = new Rechteck(new double[] { 10.0, 20.0 });
-            Console.WriteLine($"Rechteckfläche={r.RechteckFläche()}");
-            Console.WriteLine(r);
-
             Dreieck d = new Dreieck(new double[] { 10.0, 20.0, 30.0 });
-            Console.WriteLine($"Dreieckumfang={d.Umfang()}");
-            Console.WriteLine(d);
-
             Quadrat q = new Quadrat(new double[] { 10.0 });
-            Console.WriteLine($"Quadratfläche={q.QuadratFläche()}");
-            Console.WriteLine(q);
+
+            Figuren.Add(r);
+            Figuren.Add(d);
+            Figuren.Add(q);
+
+            foreach (var geomfigure in Figuren)
+            {
+                Console.WriteLine(geomfigure.ToString());
+                Console.WriteLine(geomfigure.Umfang());
+            }
+
+            //Console.WriteLine($"Rechteckfläche={r.RechteckFläche()}");
+            //Console.WriteLine(r.ToString());
+
+            //Console.WriteLine($"Dreieckumfang={d.Umfang()}");
+            //Console.WriteLine(d.ToString());
+
+            //Console.WriteLine($"Quadratfläche={q.QuadratFläche()}");
+            //Console.WriteLine(q.ToString());
+
 
             Console.ReadKey();
         }

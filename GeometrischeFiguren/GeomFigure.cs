@@ -31,5 +31,15 @@ namespace GeometrischeFiguren
             return result;
         }
 
+        public string Umfang()
+        {
+            double tmp = 0;
+            foreach (double seite in Seiten)
+            {
+                tmp += seite;
+            }
+            return $"Umfang: {tmp}";
+        }
+
     }
 }
