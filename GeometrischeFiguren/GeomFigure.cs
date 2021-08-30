@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GeometrischeFiguren
 {
-    public class GeomFigure : IDraw
+    public abstract class GeomFigure : IDraw
     {
         public string Color { get; set; }
 
