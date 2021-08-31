@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace saalSEQUENZPLAN
 {
-    class Platz
+    public class Platz
     {
+        private Bestellung _bestellung;
+
+      
+        public Platz(Bestellung bestellung)
+        {
+            _bestellung = bestellung;
+        }
+       
     }
 }

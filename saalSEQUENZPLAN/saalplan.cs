@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace saalSEQUENZPLAN
 {
-    class saalplan
+    public class saalplan
     {
+        public verkauf Verkauf { get; set; }
     }
 }

@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace saalSEQUENZPLAN
 {
-    class verkauf
+    public class verkauf
     {
+        Bestellung _bestellung = new Bestellung();
+
+        public verkauf()
+        {
+
+        }
+        public verkauf(Bestellung Bestellung)
+        {
+            _bestellung = Bestellung;
+        }
     }
 }
